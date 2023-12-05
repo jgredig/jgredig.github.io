@@ -190,8 +190,8 @@ function onEachFeature(feature, layer) {
 	function onEachFeaturePP(feature, layer) {
 		layer.on({
 		});
-		layer.bindTooltip('<br>'+feature.properties.PHYSADDRES+'</b><br>'+
-			feature.properties.PHYSCITY)
+		layer.bindTooltip('<br>'+feature.properties.PHYSADDRES+", "+feature.properties.PHYSCITY+'</b><br>'+
+			"Parcel #: "+feature.properties.PARCELNB)
 	}
 
 	function numberWithCommas(rawNum) {
